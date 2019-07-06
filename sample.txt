@@ -1,0 +1,22 @@
+static
+program main {
+    int x = 14;
+    f;
+    g;
+    x = 4;
+    h;
+
+    program f {
+        int x = 13;
+        h;
+    }
+
+    program g {
+        int x = 12;
+        h;
+    }
+
+    program h {
+        print x;
+    }
+}
