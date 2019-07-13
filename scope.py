@@ -59,15 +59,15 @@ class Scope:
             self.code += line
         self.programs = {}
         self.create_programs()
-        for p in self.programs:
+        '''for p in self.programs:
             if self.programs[p].parent is not None:
                 print(p, self.programs[p].parent, self.programs[p].variables, self.programs[p].commands)
             else:
-                print(p, "None", self.programs[p].variables, self.programs[p].commands)
+                print(p, "None", self.programs[p].variables, self.programs[p].commands)'''
         self.run()
 
     def create_programs(self):
-        print(self.code.split())
+        # print(self.code.split())
         commands = self.code.split()
         parent = None
         program = None

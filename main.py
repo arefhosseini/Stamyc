@@ -2,7 +2,7 @@ from scope import *
 
 
 def main():
-    file = open("samples/1.txt", "r")
+    file = open("samples/1_dynamic.txt", "r")
     if file.mode == "r":
         lines = file.readlines()
         if lines[0].strip() == "dynamic":

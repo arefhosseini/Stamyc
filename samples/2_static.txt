@@ -1,0 +1,14 @@
+static
+program main {
+    int x = 5;
+    program1;
+
+    program program1 {
+        int x = 10;
+        program2;
+    }
+
+    program program2 {
+        print x;
+    }
+}

@@ -1,0 +1,25 @@
+dynamic
+program main {
+    int x = 14;
+    f;
+    g;
+
+    program f {
+        int x = 5;
+        h;
+        x = 7;
+        r;
+    }
+
+    program g {
+        h;
+    }
+
+    program h {
+        r;
+        program r {
+            print x;
+        }
+    }
+
+}
